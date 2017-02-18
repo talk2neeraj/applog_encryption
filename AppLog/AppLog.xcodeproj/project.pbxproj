@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12CD13681CF1838B001D32E6 /* AppLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 12CD13671CF1838B001D32E6 /* AppLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12CD13711CF183CD001D32E6 /* AppLogHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 12CD136F1CF183CD001D32E6 /* AppLogHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12CD13721CF183CD001D32E6 /* AppLogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD13701CF183CD001D32E6 /* AppLogHelper.m */; };
+		12CD13821CF184FF001D32E6 /* LogService.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD13811CF184FF001D32E6 /* LogService.m */; };
+		12CD13841CF184FF001D32E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD13831CF184FF001D32E6 /* main.m */; };
+		12CD13881CF184FF001D32E6 /* LogService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 12CD137D1CF184FF001D32E6 /* LogService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		12CD13971CF18557001D32E6 /* NSData+RSAEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD13911CF18557001D32E6 /* NSData+RSAEncrypt.m */; };
+		12CD13981CF18557001D32E6 /* NSString+CommandExecution.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD13931CF18557001D32E6 /* NSString+CommandExecution.m */; };
+		12CD13991CF18557001D32E6 /* RSAEncryptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD13951CF18557001D32E6 /* RSAEncryptionManager.m */; };
+		12CD139E1CF18618001D32E6 /* id_rsa.pem in Resources */ = {isa = PBXBuildFile; fileRef = 12CD139D1CF18618001D32E6 /* id_rsa.pem */; };
+		12CD13A11CF186C0001D32E6 /* LogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 12CD139F1CF186C0001D32E6 /* LogManager.h */; };
+		12CD13A21CF186C0001D32E6 /* LogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD13A01CF186C0001D32E6 /* LogManager.m */; };
+		12CD13AC1CF1BA15001D32E6 /* NSData+AES256Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CD13AB1CF1BA15001D32E6 /* NSData+AES256Encrypt.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12CD13861CF184FF001D32E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12CD135B1CF1838B001D32E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12CD137C1CF184FF001D32E6;
+			remoteInfo = LogService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12CD138C1CF184FF001D32E6 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				12CD13881CF184FF001D32E6 /* LogService.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12CD13641CF1838B001D32E6 /* AppLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CD13671CF1838B001D32E6 /* AppLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppLog.h; sourceTree = "<group>"; };
+		12CD13691CF1838B001D32E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12CD136F1CF183CD001D32E6 /* AppLogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppLogHelper.h; sourceTree = "<group>"; };
+		12CD13701CF183CD001D32E6 /* AppLogHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppLogHelper.m; sourceTree = "<group>"; };
+		12CD137D1CF184FF001D32E6 /* LogService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = LogService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CD137F1CF184FF001D32E6 /* LogServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogServiceProtocol.h; sourceTree = "<group>"; };
+		12CD13801CF184FF001D32E6 /* LogService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogService.h; sourceTree = "<group>"; };
+		12CD13811CF184FF001D32E6 /* LogService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogService.m; sourceTree = "<group>"; };
+		12CD13831CF184FF001D32E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12CD13851CF184FF001D32E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12CD138E1CF18557001D32E6 /* NSData+AES256Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256Encrypt.h"; sourceTree = "<group>"; };
+		12CD13901CF18557001D32E6 /* NSData+RSAEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+RSAEncrypt.h"; sourceTree = "<group>"; };
+		12CD13911CF18557001D32E6 /* NSData+RSAEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+RSAEncrypt.m"; sourceTree = "<group>"; };
+		12CD13921CF18557001D32E6 /* NSString+CommandExecution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CommandExecution.h"; sourceTree = "<group>"; };
+		12CD13931CF18557001D32E6 /* NSString+CommandExecution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CommandExecution.m"; sourceTree = "<group>"; };
+		12CD13941CF18557001D32E6 /* RSAEncryptionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptionManager.h; sourceTree = "<group>"; };
+		12CD13951CF18557001D32E6 /* RSAEncryptionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptionManager.m; sourceTree = "<group>"; };
+		12CD139A1CF1857E001D32E6 /* LogServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogServiceProvider.h; sourceTree = "<group>"; };
+		12CD139B1CF1857E001D32E6 /* LogServiceReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogServiceReceiver.h; sourceTree = "<group>"; };
+		12CD139D1CF18618001D32E6 /* id_rsa.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = id_rsa.pem; path = ../../Keys/id_rsa.pem; sourceTree = "<group>"; };
+		12CD139F1CF186C0001D32E6 /* LogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogManager.h; sourceTree = "<group>"; };
+		12CD13A01CF186C0001D32E6 /* LogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogManager.m; sourceTree = "<group>"; };
+		12CD13AB1CF1BA15001D32E6 /* NSData+AES256Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256Encrypt.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12CD13601CF1838B001D32E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12CD137A1CF184FF001D32E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12CD135A1CF1838B001D32E6 = {
+			isa = PBXGroup;
+			children = (
+				12CD13661CF1838B001D32E6 /* AppLog */,
+				12CD137E1CF184FF001D32E6 /* LogService */,
+				12CD13651CF1838B001D32E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12CD13651CF1838B001D32E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12CD13641CF1838B001D32E6 /* AppLog.framework */,
+				12CD137D1CF184FF001D32E6 /* LogService.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12CD13661CF1838B001D32E6 /* AppLog */ = {
+			isa = PBXGroup;
+			children = (
+				12CD139F1CF186C0001D32E6 /* LogManager.h */,
+				12CD13A01CF186C0001D32E6 /* LogManager.m */,
+				12CD13671CF1838B001D32E6 /* AppLog.h */,
+				12CD136F1CF183CD001D32E6 /* AppLogHelper.h */,
+				12CD13701CF183CD001D32E6 /* AppLogHelper.m */,
+				12CD13691CF1838B001D32E6 /* Info.plist */,
+			);
+			path = AppLog;
+			sourceTree = "<group>";
+		};
+		12CD137E1CF184FF001D32E6 /* LogService */ = {
+			isa = PBXGroup;
+			children = (
+				12CD13801CF184FF001D32E6 /* LogService.h */,
+				12CD13811CF184FF001D32E6 /* LogService.m */,
+				12CD137F1CF184FF001D32E6 /* LogServiceProtocol.h */,
+				12CD139A1CF1857E001D32E6 /* LogServiceProvider.h */,
+				12CD139B1CF1857E001D32E6 /* LogServiceReceiver.h */,
+				12CD13831CF184FF001D32E6 /* main.m */,
+				12CD139C1CF1860B001D32E6 /* Resource */,
+				12CD138D1CF1854A001D32E6 /* Utilities */,
+			);
+			path = LogService;
+			sourceTree = "<group>";
+		};
+		12CD138D1CF1854A001D32E6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				12CD138E1CF18557001D32E6 /* NSData+AES256Encrypt.h */,
+				12CD13AB1CF1BA15001D32E6 /* NSData+AES256Encrypt.m */,
+				12CD13901CF18557001D32E6 /* NSData+RSAEncrypt.h */,
+				12CD13911CF18557001D32E6 /* NSData+RSAEncrypt.m */,
+				12CD13921CF18557001D32E6 /* NSString+CommandExecution.h */,
+				12CD13931CF18557001D32E6 /* NSString+CommandExecution.m */,
+				12CD13941CF18557001D32E6 /* RSAEncryptionManager.h */,
+				12CD13951CF18557001D32E6 /* RSAEncryptionManager.m */,
+			);
+			name = Utilities;
+			path = ../../Utility;
+			sourceTree = "<group>";
+		};
+		12CD139C1CF1860B001D32E6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				12CD13851CF184FF001D32E6 /* Info.plist */,
+				12CD139D1CF18618001D32E6 /* id_rsa.pem */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		12CD13611CF1838B001D32E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CD13681CF1838B001D32E6 /* AppLog.h in Headers */,
+				12CD13711CF183CD001D32E6 /* AppLogHelper.h in Headers */,
+				12CD13A11CF186C0001D32E6 /* LogManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		12CD13631CF1838B001D32E6 /* AppLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12CD136C1CF1838B001D32E6 /* Build configuration list for PBXNativeTarget "AppLog" */;
+			buildPhases = (
+				12CD135F1CF1838B001D32E6 /* Sources */,
+				12CD13601CF1838B001D32E6 /* Frameworks */,
+				12CD13611CF1838B001D32E6 /* Headers */,
+				12CD13621CF1838B001D32E6 /* Resources */,
+				12CD138C1CF184FF001D32E6 /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12CD13871CF184FF001D32E6 /* PBXTargetDependency */,
+			);
+			name = AppLog;
+			productName = AppLog;
+			productReference = 12CD13641CF1838B001D32E6 /* AppLog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		12CD137C1CF184FF001D32E6 /* LogService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12CD13891CF184FF001D32E6 /* Build configuration list for PBXNativeTarget "LogService" */;
+			buildPhases = (
+				12CD13791CF184FF001D32E6 /* Sources */,
+				12CD137A1CF184FF001D32E6 /* Frameworks */,
+				12CD137B1CF184FF001D32E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogService;
+			productName = LogService;
+			productReference = 12CD137D1CF184FF001D32E6 /* LogService.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12CD135B1CF1838B001D32E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Nik;
+				TargetAttributes = {
+					12CD13631CF1838B001D32E6 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					12CD137C1CF184FF001D32E6 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 12CD135E1CF1838B001D32E6 /* Build configuration list for PBXProject "AppLog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 12CD135A1CF1838B001D32E6;
+			productRefGroup = 12CD13651CF1838B001D32E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12CD13631CF1838B001D32E6 /* AppLog */,
+				12CD137C1CF184FF001D32E6 /* LogService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12CD13621CF1838B001D32E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12CD137B1CF184FF001D32E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CD139E1CF18618001D32E6 /* id_rsa.pem in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12CD135F1CF1838B001D32E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CD13A21CF186C0001D32E6 /* LogManager.m in Sources */,
+				12CD13721CF183CD001D32E6 /* AppLogHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12CD13791CF184FF001D32E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CD13AC1CF1BA15001D32E6 /* NSData+AES256Encrypt.m in Sources */,
+				12CD13841CF184FF001D32E6 /* main.m in Sources */,
+				12CD13981CF18557001D32E6 /* NSString+CommandExecution.m in Sources */,
+				12CD13821CF184FF001D32E6 /* LogService.m in Sources */,
+				12CD13971CF18557001D32E6 /* NSData+RSAEncrypt.m in Sources */,
+				12CD13991CF18557001D32E6 /* RSAEncryptionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12CD13871CF184FF001D32E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12CD137C1CF184FF001D32E6 /* LogService */;
+			targetProxy = 12CD13861CF184FF001D32E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12CD136A1CF1838B001D32E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12CD136B1CF1838B001D32E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		12CD136D1CF1838B001D32E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = AppLog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nik.applog.AppLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		12CD136E1CF1838B001D32E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = AppLog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nik.applog.AppLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		12CD138A1CF184FF001D32E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LogService/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nik.logservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		12CD138B1CF184FF001D32E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LogService/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nik.logservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12CD135E1CF1838B001D32E6 /* Build configuration list for PBXProject "AppLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12CD136A1CF1838B001D32E6 /* Debug */,
+				12CD136B1CF1838B001D32E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12CD136C1CF1838B001D32E6 /* Build configuration list for PBXNativeTarget "AppLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12CD136D1CF1838B001D32E6 /* Debug */,
+				12CD136E1CF1838B001D32E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12CD13891CF184FF001D32E6 /* Build configuration list for PBXNativeTarget "LogService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12CD138A1CF184FF001D32E6 /* Debug */,
+				12CD138B1CF184FF001D32E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12CD135B1CF1838B001D32E6 /* Project object */;
+}
