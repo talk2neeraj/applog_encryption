@@ -1,11 +1,11 @@
 # AppLog
 Creating developer encrypted log file from Mac Application and tool to decrypt the log back using own public private key
 Create Public and Private key for your application.
-**************************************************
+//**************************************************
 cd {ProjectLocation}/AppLog/Keys
 ssh-keygen -t rsa -f id_rsa
 openssl rsa -in id_rsa -pubout -out id_rsa.pem
-**************************************************
+//**************************************************
 Build and run Decrypter app once and kill it.
 Build the framwork and import/include in your Mac Project.
 Start adding log for your appplication using APP_LOG_INFO or APP_LOG_DEBUG helper app.
